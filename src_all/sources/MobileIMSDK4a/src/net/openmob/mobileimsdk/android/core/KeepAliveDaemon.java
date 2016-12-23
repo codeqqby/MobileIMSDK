@@ -1,12 +1,13 @@
 /*
- * Copyright (C) 2015 Jack Jiang The MobileIMSDK Project. 
+ * Copyright (C) 2016 即时通讯网(52im.net) The MobileIMSDK Project. 
  * All rights reserved.
  * Project URL:https://github.com/JackJiang2011/MobileIMSDK
  *  
- * openmob.net PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ * 即时通讯网(52im.net) - 即时通讯技术社区! PROPRIETARY/CONFIDENTIAL.
+ * Use is subject to license terms.
  * 
- * Archived at 2015-11-27 14:02:01, code by Jack Jiang.
- * You can contact author with jack.jiang@openmob.net or jb2011@163.com.
+ * KeepAliveDaemon.java at 2016-2-20 11:25:50, code by Jack Jiang.
+ * You can contact author with jack.jiang@52im.net or jb2011@163.com.
  */
 package net.openmob.mobileimsdk.android.core;
 
@@ -60,7 +61,7 @@ public class KeepAliveDaemon
 				// 次还没有运行完的情况下又重复过劲行，从而出现无法预知的错误
 				if (!KeepAliveDaemon.this._excuting)
 				{
-					new AsyncTask()
+					new AsyncTask<Object, Integer, Integer>()
 					{
 						private boolean willStop = false;
 
